@@ -92,6 +92,12 @@ projects/project3/
 docker-compose restart nginx
 ```
 
+5. Import database
+```bash
+docker exec -i mysql_db mysql -uroot -proot arrowster_bk < bk_arrowster_22_aug_25.sql
+
+```
+
 ## Notes
 
 - Use this environment for **local development only**. Do not expose MySQL root password to production.
